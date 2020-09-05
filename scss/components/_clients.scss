@@ -1,0 +1,33 @@
+.clients {
+  .client-box {
+    display: flex;
+    justify-content: space-between;
+
+    .clients-link {
+      display: inline-flex;
+      width: 170px;
+      height: 90px;
+      justify-content: center;
+      border: 1px solid #ccc;
+      align-items: center;
+      border-radius: 4px;
+      fill: $primary-text-color;
+
+      transition-property: fill, border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        fill: $accent-color;
+        border-color: $accent-color;
+      }
+    }
+    .item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+    }
+  }
+}

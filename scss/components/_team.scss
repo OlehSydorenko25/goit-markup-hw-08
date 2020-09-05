@@ -1,0 +1,82 @@
+.team {
+  background-color: $background-pinc-color;
+
+  .title {
+    background-color: $accent-white-color;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .name {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    margin-top: 30px;
+  }
+
+  .specialty {
+    margin-bottom: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .name + p {
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+  }
+
+  .link-soc {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 24px;
+  }
+
+  .link-soc a:hover,
+  .link-soc a:focus {
+    background-color: $accent-color;
+  }
+
+  .social-icon {
+    fill: $primary-text-color;
+  }
+
+  .link-soc a:hover .social-icon,
+  .link-soc a:focus .social-icon {
+    fill: $accent-white-color;
+  }
+
+  .link-soc a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .subject {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .subject > .title {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
