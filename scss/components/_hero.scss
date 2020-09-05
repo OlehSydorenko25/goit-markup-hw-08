@@ -1,7 +1,19 @@
 .hero {
-  height: 600px;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8) 0%,
@@ -14,10 +26,29 @@
   .title {
     color: $accent-white-color;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+
+  button {
+    background-color: $accent-color;
+    color: $accent-white-color;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    border: 0px;
+
+    display: inline-block;
+
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    margin-top: 30px;
   }
 }

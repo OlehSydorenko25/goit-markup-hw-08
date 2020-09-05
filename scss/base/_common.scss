@@ -37,10 +37,10 @@ p {
 }
 
 .container {
-  width: 1230px;
-  padding: 94px 15px;
   margin-left: auto;
   margin-right: auto;
+
+  padding: 60px 15px 60px 15px;
 }
 
 .no-padding {
@@ -52,10 +52,6 @@ body {
   background-color: $accent-white-color;
   font-family: "Roboto", sans-serif;
   margin: 0;
-}
-
-.nav-box {
-  display: flex;
   align-items: center;
 }
 
@@ -66,4 +62,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: 700;
+
+  margin-bottom: 50px;
 }

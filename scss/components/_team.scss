@@ -1,17 +1,6 @@
 .team {
   background-color: $background-pinc-color;
 
-  .title {
-    background-color: $accent-white-color;
-    border-radius: 4px;
-
-    box-sizing: border-box;
-  }
-
-  ul {
-    padding: 0;
-  }
-
   .name {
     color: $title-text-color;
     font-weight: 500;
@@ -27,56 +16,85 @@
     margin-bottom: 16px;
     margin-top: 10px;
     text-align: center;
-  }
 
-  .name + p {
     color: $primary-text-color;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
   }
 
-  .link-soc {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 24px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
-  .link-soc a:hover,
-  .link-soc a:focus {
-    background-color: $accent-color;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
 
-  .social-icon {
-    fill: $primary-text-color;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 
-  .link-soc a:hover .social-icon,
-  .link-soc a:focus .social-icon {
-    fill: $accent-white-color;
-  }
+  .title {
+    border-radius: 4px;
+    padding-bottom: 24px;
+    margin: 15px;
+    background-color: $accent-white-color;
 
-  .link-soc a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    padding: 12px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
 
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .link-soc {
+      display: flex;
+      justify-content: space-evenly;
+
+      .social-icon {
+        fill: $primary-text-color;
+      }
+    }
+
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      padding: 12px;
+
+      transition-property: background-color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+
+        &:hover .social-icon,
+        &:focus .social-icon {
+          fill: $accent-white-color;
+        }
+      }
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 8 * 15px) / 4);
+    }
   }
 
   .subject {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .subject > .title {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+    margin: -15px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }
