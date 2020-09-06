@@ -474,6 +474,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
 }
@@ -522,8 +524,6 @@ body {
 
 @media screen and (min-width: 480px) {
   .clients .client-box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 480px;
   }
   .clients .client-box .clients-link {
@@ -533,8 +533,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .clients .client-box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 768px;
   }
   .clients .client-box .clients-link {
@@ -552,5 +550,177 @@ body {
   .clients .client-box .clients-link {
     width: 170px;
   }
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.footer .title {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer .link {
+  color: #757575;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.footer .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer .logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 153px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.footer .box-link {
+  width: 231px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer .box-link .footer-add ul .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.connect {
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+}
+
+.connect .connect-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+}
+
+.connect .connect-box .item {
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connect .connect-box .item .connect-icon {
+  fill: #ffffff;
+}
+
+.connect .connect-box .item:hover,
+.connect .connect-box .item :focus {
+  background-color: #2196f3;
+}
+
+.connect .connect-box .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.subskriber {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 480px;
+}
+
+.subskriber .ft-input {
+  width: 300px;
+  height: 50px;
+  background-color: #2f303a;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .subskriber .ft-input {
+    width: 450px;
+  }
+}
+
+.subskriber button {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-style: normal;
+  border: 0px;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-right: 55px;
+  padding-bottom: 10px;
+  min-width: 200px;
+}
+
+.subskriber .subskriber-icon {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+address .maps {
+  color: #ffffff;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=main.css.map */
