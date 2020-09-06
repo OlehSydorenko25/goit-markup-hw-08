@@ -1,64 +1,67 @@
-// .clients {
-//   .client-box {
-//     .clients-link {
-//       display: inline-flex;
-//       width: 170px;
-//       height: 90px;
-//       justify-content: center;
-//       border: 1px solid #ccc;
-//       align-items: center;
-//       border-radius: 4px;
-//       fill: $primary-text-color;
-
-//       transition-property: fill, border;
-//       transition-duration: 250ms;
-//       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-//       &:hover,
-//       &:focus {
-//         fill: $accent-color;
-//         border-color: $accent-color;
-//       }
-//     }
-//     .item {
-//       display: inline-flex;
-//       align-items: center;
-//       justify-content: center;
-//       border-radius: 4px;
-//     }
-//   }
-
-//     }
-//   }
-// }
-
 .clients {
+  .client-box {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    .clients-link {
+      display: inline-flex;
+      width: 212px;
+      height: 90px;
+      justify-content: center;
+      border: 1px solid #ccc;
+      align-items: center;
+      border-radius: 4px;
+      fill: $primary-text-color;
+      margin: 15px;
+
+      transition-property: fill, border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        fill: $accent-color;
+        border-color: $accent-color;
+      }
+    }
+    .item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+    }
+  }
+
   @media screen and (min-width: 480px) {
-    width: 480px;
+    .client-box {
+      flex-wrap: wrap;
+      width: 480px;
+
+      .clients-link {
+        width: 210px;
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    .client-box {
+      flex-wrap: wrap;
+      width: 768px;
+
+      .clients-link {
+        width: 226px;
+      }
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+    .client-box {
+      justify-content: space-between;
+      width: 1200px;
 
-  .client-box {
-    @media screen and (min-width: 480px) {
-      display: inline-flex;
-      flex-wrap: wrap;
-      margin: -15px;
-
-      .item {
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        padding: 20px;
-        margin: 15px;
-
-        .clients-link {
-        }
+      .clients-link {
+        width: 170px;
       }
     }
   }

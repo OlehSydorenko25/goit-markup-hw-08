@@ -469,4 +469,88 @@ body {
         flex-wrap: wrap;
   }
 }
+
+.clients .client-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clients .client-box .clients-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 212px;
+  height: 90px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ccc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  fill: #757575;
+  margin: 15px;
+  -webkit-transition-property: fill, border;
+  transition-property: fill, border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients .client-box .clients-link:hover, .clients .client-box .clients-link:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+
+.clients .client-box .item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients .client-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 480px;
+  }
+  .clients .client-box .clients-link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients .client-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 768px;
+  }
+  .clients .client-box .clients-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients .client-box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1200px;
+  }
+  .clients .client-box .clients-link {
+    width: 170px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
