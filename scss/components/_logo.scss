@@ -1,28 +1,31 @@
-// .logo {
-//   font-family: "Raleway", sans-serif;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.2;
-//   letter-spacing: 0.03em;
-//   display: flex;
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  display: flex;
 
-//   padding-top: 24px;
-//   padding-bottom: 25px;
-//   margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
-//   .web {
-//     color: $accent-color;
-//     margin-right: 7px;
-//   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
-//   .studio {
-//     color: $title-text-color;
-//   }
+  .web {
+    color: $accent-color;
+    margin-right: 7px;
+  }
 
-//   .studio-white {
-//     color: $accent-white-color;
-//   }
-// }
+  .studio {
+    color: $title-text-color;
+  }
+
+  .studio-white {
+    color: $accent-white-color;
+  }
+}
 
 // .footer .footer-logo {
 //   width: 153px;

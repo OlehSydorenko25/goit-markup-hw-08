@@ -1,0 +1,68 @@
+.address-box {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    padding: 21px 0 21px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    padding: 32px 0 22px 0;
+  }
+
+  .address-list {
+    display: flex;
+
+    .addres-icon {
+      margin-right: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      .item {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+    }
+    a {
+      color: $primary-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      font-style: normal;
+
+      display: flex;
+      align-items: center;
+    }
+
+    .item {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .address-list .item a:hover,
+  .address-list .item a:focus {
+    color: $accent-color;
+  }
+
+  .address-list .item a:hover .addres-icon,
+  .address-list .item a:focus .addres-icon {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+
+  .address-box {
+    margin-left: auto;
+
+    .addres-icon {
+      margin-right: 10px;
+      fill: $primary-text-color;
+    }
+  }
+}

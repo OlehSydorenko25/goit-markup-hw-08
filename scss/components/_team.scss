@@ -70,8 +70,8 @@
       &:focus {
         background-color: $accent-color;
 
-        &:hover .social-icon,
-        &:focus .social-icon {
+        .social-icon,
+        .social-icon {
           fill: $accent-white-color;
         }
       }
@@ -92,6 +92,7 @@
 
   .subject {
     margin: -15px;
+
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
