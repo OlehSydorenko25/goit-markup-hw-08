@@ -1,3 +1,18 @@
-body {
-  text-align: center;
+.box-one {
+  background-color: #ccc;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.box-two {
+  background-color: #ccc;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.ft-box-box {
+  display: flex;
+  flex-wrap: wrap;
 }

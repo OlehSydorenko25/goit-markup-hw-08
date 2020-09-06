@@ -4,6 +4,8 @@
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
+    justify-content: center;
 
     .clients-link {
       display: inline-flex;
@@ -39,7 +41,7 @@
       width: 480px;
 
       .clients-link {
-        width: 210px;
+        width: 200px;
       }
     }
   }

@@ -10,8 +10,14 @@
 }
 
 .site-nav {
-  display: flex;
   margin-left: 68px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 
   .item {
     padding: 32px 0 32px 0;
