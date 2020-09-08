@@ -1,18 +1,206 @@
-.box-one {
-  background-color: #ccc;
-  display: block;
-  width: 100px;
-  height: 100px;
+.footer {
+  background-color: #2f303a;
+
+  .ft-box {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .footer-box {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .title {
+    color: $accent-white-color;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+
+    margin-bottom: 20px;
+  }
+
+  .link {
+    color: $primary-text-color;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 153px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .box-link {
+    width: 231px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box-link .footer-add {
+    ul .item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
 }
 
-.box-two {
-  background-color: #ccc;
-  display: block;
-  width: 100px;
-  height: 100px;
+.connect {
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+
+  .connect-box {
+    display: flex;
+    padding-top: 20px;
+
+    // @media screen and (min-width: 768px) {
+    //   display: block;
+    // }
+
+    .item {
+      background: rgba(255, 255, 255, 0.1);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+
+      transition-property: background-color, color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      .connect-icon {
+        fill: $accent-white-color;
+      }
+
+      &:hover,
+      :focus {
+        background-color: $accent-color;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
-.ft-box-box {
-  display: flex;
-  flex-wrap: wrap;
+.subskriber {
+  display: block;
+  margin-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .footer-input {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .ft-input {
+    display: block;
+    height: 50px;
+    background-color: #2f303a;
+    padding: 16px;
+    margin-left: auto;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: $accent-color;
+    color: $accent-white-color;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    border: 0px;
+    position: relative;
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding-left: 32px;
+    padding-top: 10px;
+    padding-right: 55px;
+    padding-bottom: 10px;
+    min-width: 200px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 12px;
+    }
+  }
+
+  .subskriber-icon {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translate(0%, -50%);
+  }
+}
+
+address .maps {
+  color: $accent-white-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
