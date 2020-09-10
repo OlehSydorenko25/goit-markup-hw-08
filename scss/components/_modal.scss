@@ -55,8 +55,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  width: 450px;
-  height: 581px;
+  width: 100%;
+  max-width: 530px;
+  height: auto;
   text-align: center;
   color: #757575;
   background-color: #fff;
@@ -152,4 +153,23 @@
 
 .check-link {
   color: $accent-color;
+}
+
+.submit-button {
+  background-color: $accent-color;
+  color: $accent-white-color;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-style: normal;
+  border: 0px;
+
+  display: inline-block;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 30px;
 }
