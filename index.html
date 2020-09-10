@@ -115,6 +115,16 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-button is-open" data-menu-button>
+          <svg
+            width="40"
+            height="40"
+            aria-labelledby="Переключатель мобильного меню"
+          >
+            <use class="icon-cross" href="./images/sprite.svg#icon-menu"></use>
+            <use class="icon-menu" href="./images/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -191,7 +201,7 @@
 
       <!-- Чем мы занимаемся -->
 
-      <!-- <section class="work container">
+      <section class="work container">
         <h2 class="subtitle">Чем мы занимаемся</h2>
         <ul class="subject">
           <li class="title">
@@ -209,7 +219,7 @@
             <h3 class="signature">Дизайнерские решения</h3>
           </li>
         </ul>
-      </section> -->
+      </section>
 
       <!-- Наша команда -->
 
@@ -519,5 +529,6 @@
         refs.modal.classList.toggle("is-hidden");
       }
     </script>
+    <script src="./menu.js"></script>
   </body>
 </html>
