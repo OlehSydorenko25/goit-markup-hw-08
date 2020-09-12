@@ -87,6 +87,11 @@
 
   .item .img {
     position: relative;
+
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 
   .info {
