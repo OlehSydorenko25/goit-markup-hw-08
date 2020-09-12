@@ -1,10 +1,17 @@
 @media screen and (max-width: 767px) {
-  .site-nav {
+  .menu-container {
     display: none;
-  }
 
-  .address-box {
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $accent-white-color;
+    padding: 60px;
+
+    &.is-open {
+      display: block;
+    }
   }
 
   .menu-button {
@@ -25,10 +32,216 @@
       display: none;
     }
   }
+
+  .nav-box {
+    display: flex;
+    align-items: center;
+    max-width: 480px;
+    position: relative;
+
+    .logo {
+      margin-right: auto;
+    }
+
+    .site-nav {
+      .item {
+        text-align: center;
+
+        &:not(:first-child) {
+          margin-top: 40px;
+        }
+      }
+
+      a {
+        color: $title-text-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+          color: $accent-color;
+        }
+      }
+
+      .link {
+        color: $accent-color;
+
+        //   &::after {
+        //     content: " ";
+        //     display: block;
+        //     height: 4px;
+        //     background-color: $accent-color;
+        //     border-radius: 2px;
+        //     margin-top: 8px;
+        //   }
+      }
+    }
+  }
+
+  .address-box {
+    .address-list {
+      margin-top: 60px;
+
+      .item {
+        display: flex;
+        justify-content: center;
+
+        &:not(:last-child) {
+          margin-bottom: 21px;
+        }
+
+        a {
+          color: $primary-text-color;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.02em;
+          font-style: normal;
+
+          display: flex;
+          align-items: center;
+        }
+        .address-icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
+  }
+
+  .nav-box {
+    width: 768px;
+    display: flex;
+  }
+
+  .menu-container {
+    display: flex;
+
+    ul {
+      display: flex;
+    }
+  }
+
+  .site-nav {
+    display: flex;
+    margin-left: 88px;
+
+    .item:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    a {
+      color: $title-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+
+      display: block;
+      padding-top: 32px;
+
+      transition-property: background-color, color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+
+    .link {
+      color: $accent-color;
+
+      &::after {
+        content: " ";
+        display: block;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+        margin-top: 28px;
+      }
+    }
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+    margin-left: 55px;
+
+    .address-icon {
+      margin-right: 10px;
+      fill: $primary-text-color;
+    }
+
+    .item {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    a {
+      color: $primary-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      font-style: normal;
+
+      display: flex;
+
+      align-items: center;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      transition-property: background-color, color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .address-list .item a:hover,
+  .address-list .item a:focus {
+    color: $accent-color;
+  }
+
+  .address-list .item a:hover .addres-icon,
+  .address-list .item a:focus .addres-icon {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-box {
+    width: 1200px;
+  }
+
+  .site-nav {
+    margin-left: 93px;
+  }
+  .address-list {
+    flex-direction: row;
+    margin-top: 32px;
+    margin-left: 300px;
+
+    .item {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
 }
